@@ -1,24 +1,97 @@
 <html>
-  <head>
-    <title>Home Page</title>
-  </head>
-  
-  <body>
-    <!-- nav -->
-    <a href="index.html" target="_self">Home</a>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-    <a href="studentlist.html" target="_self">Student List</a>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-    <a href="newstudent.html" target="_self">New Student</a>
-    <!-- #nav -->
-    <hr/>
-    <!-- section -->
-    <h1>Name: Yousef Allam</h1>
-    <h2>ID: 20132627</h2>
-    <h3>Email: yousef.allam@fue.edu.eg</h3>
-    <!-- #section -->
-    <hr/>
-    <!-- Footer -->
-    <a href ="http://www.fue.edu.eg" target="_blank">&copy; Future University in Egypt</a>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-    <a href="mailto:yousef.allam@fue.edu.eg">contact us</a>
-    <!-- #Footer -->
-  </body>
+<head>
+<title> PRACTICAL-1  </title>
+
+</head>
+<body>
+
+<!--Start nav -->
+
+<h2>New Student</h2>
+
+ <!--End nav -->
+
+<!--Start Sec-->
+
+<form method="git">
+  <!-- start per info -->
+    <p >
+        <fieldset>
+           <legend>
+             Personal Information
+           </legend>
+    <table>
+       <tr> 
+            <td> Full Name: </td>
+            <td> <input type="text" placeholder="Name" name="name"></td>
+        </tr> 
+       <tr>
+             <td> Birthdate: </td>
+             <td> <input type="date" name="date"></td>   
+       </tr>
+       <tr>
+           <td> Gender: </td>
+           <td> <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+           </td>
+       </tr>
+    </table> </fieldset> 
+  </p>
+  <!--  per info -->
+
+
+<!-- start con info -->
+    <p>
+       <fieldset> 
+      <legend>
+      Contact Information
+    </legend>
+        <table>
+            <tr>
+                <td>Email: </td>
+                <td> <input type="email" name="email" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td> <input type="phone" name="phone" placeholder="phone"></td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td>  <textarea style ="resize: none;" rows= "10" cols="70" name="address"></textarea> </td>
+            </tr>
+        </table>
+       </fieldset>
+    </p>
+<!-- end con info -->
+
+<!-- start uni info -->
+    <p>
+         <fieldset>
+            <legend>
+              Universty Information
+            </legend>
+             <table>
+            <tr>
+                <td>Choose your Faculty: </td>
+                <td> <select>
+                 <option> Computer Science</option>
+                <option >dentistry</option>
+                <option >pharmacy</option>
+                <option >business</option>
+                <option >engineering</option>
+
+                </select>
+                </td>
+            </tr>
+        </table>
+       </fieldset>
+    </p>
+<!-- end uni info -->
+
+    <p>
+        <input type="submit" value="Add">
+    </p>
+</form>
+<!--End sec-->
+</body>
 </html>
